@@ -21,4 +21,8 @@ public class HomeController extends Controller {
     }
 
     public Result register() {return ok (views.html.register.render());}
+
+    public Result populateBooks(Http.Request request){
+        return ok();
+    }
 }
