@@ -1,13 +1,15 @@
 package connection;
 
+
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DBConnection {
 
-    public Connection getConnection() {
-        String databaseURL = "jdbc:mysql://localhost:3306/book_management";
+    public static Connection getConnection() {
+        String databaseURL = "jdbc:mysql://localhost:3306/bookmanagement";
         String user = "root";
         String password = "Hrygny@4evr";
 

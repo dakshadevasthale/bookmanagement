@@ -1,14 +1,61 @@
 package beans;
 
+import java.util.Date;
+
 public class User {
 
     private String userId;
     private String password;
     private String role;
     private String email;
-    private String status;
+    private int status;
     private String securityQ;
     private String securityA;
+    private String lName;
+    private String fName;
+    private Date dateOfBirth;
+    private String address;
+    private String contactNo;
+
+    public String getlName() {
+        return lName;
+    }
+
+    public void setlName(String lName) {
+        this.lName = lName;
+    }
+
+    public String getfName() {
+        return fName;
+    }
+
+    public void setfName(String fName) {
+        this.fName = fName;
+    }
+
+    public Date getDateOfBirth() {
+        return dateOfBirth;
+    }
+
+    public void setDateOfBirth(Date dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getContactNo() {
+        return contactNo;
+    }
+
+    public void setContactNo(String contactNo) {
+        this.contactNo = contactNo;
+    }
 
     public String getUserId() {
         return userId;
@@ -42,11 +89,11 @@ public class User {
         this.email = email;
     }
 
-    public String getStatus() {
+    public int getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(int status) {
         this.status = status;
     }
 

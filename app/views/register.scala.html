@@ -1,3 +1,141 @@
 <html>
+    <style>
+  body {
+      padding-top: 80px;
+      text-align: center;
+      font-family: monaco, monospace;
 
+      background-size: cover;
+  }
+  h1, h2 {
+      display: inline-block;
+      background: #fff;
+  }
+  h1 {
+      font-size: 30px
+  }
+  h2 {
+      font-size: 20px;
+  }
+
+</style>
+    <h1>Welcome to Library Management System</h1><br>
+    <form class="form-horizontal" method="post" action="/createUser">
+        <fieldset>
+
+                <!-- Form Name -->
+            <legend>Sign-Up</legend>
+
+                <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="firstname">First Name</label>
+                <div class="col-md-4">
+                    <input id="firstname" name="firstname" type="text" placeholder="First Name" class="form-control input-md">
+
+                </div>
+            </div>
+
+                <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="lastname">Last Name</label>
+                <div class="col-md-4">
+                    <input id="lastname" name="lastname" type="text" placeholder="Last Name" class="form-control input-md">
+
+                </div>
+            </div>
+
+                <!-- Select Basic -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="selectbasic">Security Question</label>
+                <div class="col-md-4">
+                    <select id="selectbasic" name="selectbasic" class="form-control">
+                        <option value="Mother's Maiden Name?">Mother's Maiden Name?</option>
+                        <option value="Name of pet?">Name of pet?</option>
+                    </select>
+                </div>
+            </div>
+
+                <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="securityanswer">Answer</label>
+                <div class="col-md-4">
+                    <input id="securityanswer" name="securityanswer" type="text" placeholder="" class="form-control input-md">
+
+                </div>
+            </div>
+
+                <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="dob">Date Of Birth</label>
+                <div class="col-md-4">
+                    <input id="dob" name="dob" type="date" placeholder="Enter Birthdate" class="form-control input-md">
+
+                </div>
+            </div>
+
+                <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="address">Address</label>
+                <div class="col-md-4">
+                    <input id="address" name="address" type="text" placeholder="Enter Postal Address" class="form-control input-md">
+
+                </div>
+            </div>
+
+                <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="email">Email Address</label>
+                <div class="col-md-4">
+                    <input id="email" name="email" type="text" placeholder="Enter Email-ID" class="form-control input-md">
+
+                </div>
+            </div>
+
+                <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="username">User Name</label>
+                <div class="col-md-4">
+                    <input id="username" name="username" type="text" placeholder="Enter User name" class="form-control input-md">
+
+                </div>
+            </div>
+
+                <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="password">Password</label>
+                <div class="col-md-4">
+                    <input id="password" name="password" type="password" placeholder="Enter password" class="form-control input-md">
+
+                </div>
+            </div>
+
+                <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="cnfpassword">Password</label>
+                <div class="col-md-4">
+                    <input id="cnfpassword" name="cnfpassword" type="password" placeholder="Confirm password" class="form-control input-md">
+
+                </div>
+            </div>
+
+                <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="contactnumber">Contact Number</label>
+                <div class="col-md-4">
+                    <input id="contactnumber" name="contactnumber" type="text" placeholder="Enter Contact Number" class="form-control input-md">
+
+                </div>
+            </div>
+
+                <!-- Button (Double) -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="button1id"></label>
+                <div class="col-md-8">
+                    <button id="button1id" name="button1id" class="btn btn-default" type ="submit">Submit</button>
+                    <button id="Reset" name="Reset" class="btn btn-default" type="reset">Reset</button>
+                </div>
+            </div>
+
+        </fieldset>
+    </form>
 </html>
