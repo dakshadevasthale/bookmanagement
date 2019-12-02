@@ -10,7 +10,7 @@ public class ApplicationTest {
         Connection conn ;
 
         DBConnection dbcon = new DBConnection();
-        conn = dbcon.getConnection();
+        conn = dbcon.getCon();
         System.out.println(conn);
     }
 }

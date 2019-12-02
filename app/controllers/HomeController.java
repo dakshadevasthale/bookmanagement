@@ -42,7 +42,13 @@ public class HomeController extends Controller {
 
         var formData = request.body().asFormUrlEncoded();
         var userName = formData.get("userName")[0];
+        var password = formData.get("password")[0];
+
+       /*
        System.out.println(userName);
+       System.out.println(password);*/
+
+
         return ok(views.html.UserManagement.render());
     }
 
@@ -91,5 +97,12 @@ public class HomeController extends Controller {
         UserRegistration userReg = new UserRegistration();
         userReg.createUser(newUser);
         return ok();
+
+
+    }
+
+    public Result forgotPassword()
+    {
+        return  ok(views.html.ResetPwd.render());
     }
 }
