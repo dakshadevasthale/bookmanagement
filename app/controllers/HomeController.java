@@ -2,6 +2,7 @@ package controllers;
 
 import beans.User;
 import play.mvc.*;
+import security.SecureLogin;
 import services.UserRegistration;
 
 import java.sql.SQLException;
@@ -38,7 +39,7 @@ public class HomeController extends Controller {
 
 
 
-   public Result login(Http.Request request) {
+   public Result login(Http.Request request) throws SQLException {
 
         var formData = request.body().asFormUrlEncoded();
         var userName = formData.get("userName")[0];
@@ -47,9 +48,15 @@ public class HomeController extends Controller {
        /*
        System.out.println(userName);
        System.out.println(password);*/
+       SecureLogin sl = new SecureLogin();
 
-
-        return ok(views.html.UserManagement.render());
+      boolean auth =  sl.userSecureLogin(userName,password);
+        if(auth) {
+            return ok(views.html.UserManagement.render());
+        }
+        else {
+            return ok("Wrong password!");
+        }
     }
 
     public Result createUser(Http.Request request) throws ParseException, SQLException {

@@ -41,7 +41,7 @@ public class UserRegistration {
 
                 //call for password encryption
                 BCrypt b = new BCrypt();
-                String encryptedPassword = BCrypt.hashpw(password, BCrypt.gensalt());
+                String encryptedPassword = BCrypt.hashpw(password, BCrypt.gensalt(12));
 
 
                 pstmt1 = con.prepareStatement(insertQueryUser);

@@ -1,28 +1,11 @@
 @()
 
-<html >
+<html>
+<div id="bg">    
 <head>
+<link rel="stylesheet" href='@routes.Assets.versioned("stylesheets/style.css")'>
+<h1>Online Bookstore and Rental System</h1><br>
 <title>Login Page</title>
-  <style>
-          body {
-            padding-top: 80px;
-            text-align: center;
-            font-family: monaco, monospace;
-
-            background-size: cover;
-          }
-          h1, h2 {
-            display: inline-block;
-            background: #fff;
-          }
-          h1 {
-            font-size: 30px
-          }
-          h2 {
-            font-size: 20px;
-          }
-
-  </style>
 </head>
 <body>
 <form class="form-horizontal" method="post" action="/login" >
@@ -36,7 +19,7 @@
 
   <label class="col-md-4 control-label" for="User Name">User Name</label>
   <div class="col-md-4">
-  <input id="userName" name="userName" type="text" placeholder="Enter User Name" class="form-control input-md">
+  <input id="userName" name="userName" type="text" placeholder="Enter User Name" class="form-control input-md input1">
 
   </div>
 
@@ -50,7 +33,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="password">Password</label>
   <div class="col-md-4">
-    <input id="password" name="password" type="password" placeholder="Enter Password" class="form-control input-md">
+    <input id="password" name="password" type="password" placeholder="Enter Password" class="form-control input-md input1">
 
   </div>
 </div>
@@ -59,21 +42,21 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="login"></label>
   <div class="col-md-4">
-    <button id="login" name="login" class="btn btn-primary" type="submit">Login</button>
+    <button id="login" name="login" class="button btn-primary" type="submit">Login</button>
   </div>
 </div>
-
+</form>
 <!-- Button (Double) -->
 <div class="form-group">
   <label class="col-md-4 control-label" for="forgotpassword" ></label>
   <div class="col-md-8">
-    <button id="forgotpassword" name="forgotpassword" class="btn btn-success" onclick="location.href='forgotpassword'">Forgot Password??</button>
-    <button id="signup" name="signup" class="btn btn-danger" onclick="location.href='register'">Sign Up</button>
+    <button id="forgotpassword" name="forgotpassword" class="button btn-success" onclick="location.href='forgotpassword'">Forgot Password??</button>
+    <button id="signup" name="signup" class="button btn-danger" onclick="location.href='register'">Sign Up</button>
   </div>
 </div>
 
-</form>
 
 
 </body>
+</div>
 </html>
